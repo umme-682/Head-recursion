@@ -1,0 +1,14 @@
+# program to print number decreasing then increasing order
+
+def incdec(n ,num):
+    # base case to return value when we reach our limit 
+    if(n<1 or n>num):
+        return
+    # print decreasing first 
+    print(n)
+    incdec(n - 1, num)
+    # print increasing order 
+    print(n)
+    
+n = int(input("Enter any number n: "))
+incdec(n, n)
