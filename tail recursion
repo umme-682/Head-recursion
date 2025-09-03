@@ -1,0 +1,14 @@
+def tailrec(n, num):
+    # base case: if n exceeds num, terminate the recursion
+     if n > num:
+         return
+     # print the current value of n
+     print(n)
+     # recursive call with the next value (tail recursion)
+     tailrec(n + 1, num)
+     
+# prompt the user to enter the value of n
+n = int(input("Enter n to print 1 to n: "))
+
+# inintial call to tailrec function starting from 1
+tailrec(1, n)
